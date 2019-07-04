@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SignInViewController.h"
+#import "SignInWithEmailViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    SignInWithEmailViewController *signin1 = [[SignInWithEmailViewController alloc]initWithNibName:@"SignInWithEmailViewController" bundle:nil];
+    UINavigationController *navi1 = [[UINavigationController alloc]initWithRootViewController:signin1];
+    self.window.rootViewController = navi1;//[[SignInViewController alloc]initWithNibName:@"SignInViewController" bundle:nil];
+ 
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

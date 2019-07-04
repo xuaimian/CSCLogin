@@ -8,24 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		6F11E94622CC75250039234F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E94522CC75250039234F /* AppDelegate.m */; };
-		6F11E94922CC75250039234F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E94822CC75250039234F /* ViewController.m */; };
-		6F11E94C22CC75250039234F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F11E94A22CC75250039234F /* Main.storyboard */; };
+		6F11E94922CC75250039234F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E94822CC75250039234F /* SignInViewController.m */; };
 		6F11E94E22CC75270039234F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F11E94D22CC75270039234F /* Assets.xcassets */; };
 		6F11E95122CC75270039234F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F11E94F22CC75270039234F /* LaunchScreen.storyboard */; };
 		6F11E95422CC75270039234F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E95322CC75270039234F /* main.m */; };
+		6F11E95B22CC77E30039234F /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F11E95A22CC77E30039234F /* SignInViewController.xib */; };
+		6F11E95F22CD876C0039234F /* SignInWithEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E95D22CD876C0039234F /* SignInWithEmailViewController.m */; };
+		6F11E96022CD876C0039234F /* SignInWithEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F11E95E22CD876C0039234F /* SignInWithEmailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F11E94122CC75250039234F /* CSCLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSCLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F11E94422CC75250039234F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F11E94522CC75250039234F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6F11E94722CC75250039234F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6F11E94822CC75250039234F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6F11E94B22CC75250039234F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F11E94722CC75250039234F /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		6F11E94822CC75250039234F /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		6F11E94D22CC75270039234F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F11E95022CC75270039234F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F11E95222CC75270039234F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F11E95322CC75270039234F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F11E95A22CC77E30039234F /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		6F11E95C22CD876C0039234F /* SignInWithEmailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInWithEmailViewController.h; sourceTree = "<group>"; };
+		6F11E95D22CD876C0039234F /* SignInWithEmailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInWithEmailViewController.m; sourceTree = "<group>"; };
+		6F11E95E22CD876C0039234F /* SignInWithEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInWithEmailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +65,12 @@
 			children = (
 				6F11E94422CC75250039234F /* AppDelegate.h */,
 				6F11E94522CC75250039234F /* AppDelegate.m */,
-				6F11E94722CC75250039234F /* ViewController.h */,
-				6F11E94822CC75250039234F /* ViewController.m */,
-				6F11E94A22CC75250039234F /* Main.storyboard */,
+				6F11E94722CC75250039234F /* SignInViewController.h */,
+				6F11E94822CC75250039234F /* SignInViewController.m */,
+				6F11E95A22CC77E30039234F /* SignInViewController.xib */,
+				6F11E95C22CD876C0039234F /* SignInWithEmailViewController.h */,
+				6F11E95D22CD876C0039234F /* SignInWithEmailViewController.m */,
+				6F11E95E22CD876C0039234F /* SignInWithEmailViewController.xib */,
 				6F11E94D22CC75270039234F /* Assets.xcassets */,
 				6F11E94F22CC75270039234F /* LaunchScreen.storyboard */,
 				6F11E95222CC75270039234F /* Info.plist */,
@@ -129,8 +137,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F11E95122CC75270039234F /* LaunchScreen.storyboard in Resources */,
+				6F11E95B22CC77E30039234F /* SignInViewController.xib in Resources */,
 				6F11E94E22CC75270039234F /* Assets.xcassets in Resources */,
-				6F11E94C22CC75250039234F /* Main.storyboard in Resources */,
+				6F11E96022CD876C0039234F /* SignInWithEmailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F11E94922CC75250039234F /* ViewController.m in Sources */,
+				6F11E94922CC75250039234F /* SignInViewController.m in Sources */,
+				6F11E95F22CD876C0039234F /* SignInWithEmailViewController.m in Sources */,
 				6F11E95422CC75270039234F /* main.m in Sources */,
 				6F11E94622CC75250039234F /* AppDelegate.m in Sources */,
 			);
@@ -150,14 +160,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6F11E94A22CC75250039234F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F11E94B22CC75250039234F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6F11E94F22CC75270039234F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNJ4XU6M6Q;
 				INFOPLIST_FILE = CSCLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNJ4XU6M6Q;
 				INFOPLIST_FILE = CSCLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
