@@ -14,7 +14,11 @@
 		6F11E95422CC75270039234F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E95322CC75270039234F /* main.m */; };
 		6F11E95B22CC77E30039234F /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F11E95A22CC77E30039234F /* SignInViewController.xib */; };
 		6F11E95F22CD876C0039234F /* SignInWithEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E95D22CD876C0039234F /* SignInWithEmailViewController.m */; };
-		6F11E96022CD876C0039234F /* SignInWithEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F11E95E22CD876C0039234F /* SignInWithEmailViewController.xib */; };
+		6F11E96422CDA0010039234F /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E96222CDA0010039234F /* RegistrationViewController.m */; };
+		6F11E96522CDA0010039234F /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F11E96322CDA0010039234F /* RegistrationViewController.xib */; };
+		6FCD7CCB22D2F7AA009E835E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD7CC822D2F7AA009E835E /* UITextField+Extension.swift */; };
+		6FCD7CCC22D2F7AA009E835E /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD7CC922D2F7AA009E835E /* CommonHelper.swift */; };
+		6FCD7CCD22D2F7AA009E835E /* EWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD7CCA22D2F7AA009E835E /* EWTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +34,13 @@
 		6F11E95A22CC77E30039234F /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		6F11E95C22CD876C0039234F /* SignInWithEmailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInWithEmailViewController.h; sourceTree = "<group>"; };
 		6F11E95D22CD876C0039234F /* SignInWithEmailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInWithEmailViewController.m; sourceTree = "<group>"; };
-		6F11E95E22CD876C0039234F /* SignInWithEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInWithEmailViewController.xib; sourceTree = "<group>"; };
+		6F11E96122CDA0010039234F /* RegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		6F11E96222CDA0010039234F /* RegistrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		6F11E96322CDA0010039234F /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		6FCD7CC122D2F43E009E835E /* CSCLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSCLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		6FCD7CC822D2F7AA009E835E /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		6FCD7CC922D2F7AA009E835E /* CommonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
+		6FCD7CCA22D2F7AA009E835E /* EWTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,9 @@
 		6F11E94322CC75250039234F /* CSCLogin */ = {
 			isa = PBXGroup;
 			children = (
+				6FCD7CC822D2F7AA009E835E /* UITextField+Extension.swift */,
+				6FCD7CC922D2F7AA009E835E /* CommonHelper.swift */,
+				6FCD7CCA22D2F7AA009E835E /* EWTextField.swift */,
 				6F11E94422CC75250039234F /* AppDelegate.h */,
 				6F11E94522CC75250039234F /* AppDelegate.m */,
 				6F11E94722CC75250039234F /* SignInViewController.h */,
@@ -70,11 +83,14 @@
 				6F11E95A22CC77E30039234F /* SignInViewController.xib */,
 				6F11E95C22CD876C0039234F /* SignInWithEmailViewController.h */,
 				6F11E95D22CD876C0039234F /* SignInWithEmailViewController.m */,
-				6F11E95E22CD876C0039234F /* SignInWithEmailViewController.xib */,
+				6F11E96122CDA0010039234F /* RegistrationViewController.h */,
+				6F11E96222CDA0010039234F /* RegistrationViewController.m */,
+				6F11E96322CDA0010039234F /* RegistrationViewController.xib */,
 				6F11E94D22CC75270039234F /* Assets.xcassets */,
 				6F11E94F22CC75270039234F /* LaunchScreen.storyboard */,
 				6F11E95222CC75270039234F /* Info.plist */,
 				6F11E95322CC75270039234F /* main.m */,
+				6FCD7CC122D2F43E009E835E /* CSCLogin-Bridging-Header.h */,
 			);
 			path = CSCLogin;
 			sourceTree = "<group>";
@@ -110,6 +126,7 @@
 				TargetAttributes = {
 					6F11E94022CC75250039234F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -136,10 +153,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F11E96522CDA0010039234F /* RegistrationViewController.xib in Resources */,
 				6F11E95122CC75270039234F /* LaunchScreen.storyboard in Resources */,
 				6F11E95B22CC77E30039234F /* SignInViewController.xib in Resources */,
 				6F11E94E22CC75270039234F /* Assets.xcassets in Resources */,
-				6F11E96022CD876C0039234F /* SignInWithEmailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +168,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F11E94922CC75250039234F /* SignInViewController.m in Sources */,
+				6FCD7CCD22D2F7AA009E835E /* EWTextField.swift in Sources */,
 				6F11E95F22CD876C0039234F /* SignInWithEmailViewController.m in Sources */,
+				6F11E96422CDA0010039234F /* RegistrationViewController.m in Sources */,
+				6FCD7CCB22D2F7AA009E835E /* UITextField+Extension.swift in Sources */,
 				6F11E95422CC75270039234F /* main.m in Sources */,
 				6F11E94622CC75250039234F /* AppDelegate.m in Sources */,
+				6FCD7CCC22D2F7AA009E835E /* CommonHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +308,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LNJ4XU6M6Q;
 				INFOPLIST_FILE = CSCLogin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -297,6 +320,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiosoft.CSCLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSCLogin/CSCLogin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -305,7 +331,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LNJ4XU6M6Q;
 				INFOPLIST_FILE = CSCLogin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -315,6 +343,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiosoft.CSCLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSCLogin/CSCLogin-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

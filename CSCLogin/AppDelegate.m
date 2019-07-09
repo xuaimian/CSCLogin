@@ -20,10 +20,10 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    SignInWithEmailViewController *signin1 = [[SignInWithEmailViewController alloc]initWithNibName:@"SignInWithEmailViewController" bundle:nil];
-    UINavigationController *navi1 = [[UINavigationController alloc]initWithRootViewController:signin1];
-    self.window.rootViewController = navi1;//[[SignInViewController alloc]initWithNibName:@"SignInViewController" bundle:nil];
- 
+;
+     SignInViewController *sng2 = [[SignInViewController alloc]initWithNibName:@"SignInViewController" bundle:nil];
+    UINavigationController *navi1 = [[UINavigationController alloc]initWithRootViewController:sng2];
+     self.window.rootViewController = navi1;
     [self.window makeKeyAndVisible];
     
     return YES;

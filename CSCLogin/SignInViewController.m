@@ -8,6 +8,7 @@
 
 #import "SignInViewController.h"
 #import "SignInWithEmailViewController.h"
+#import "RegistrationViewController.h"
 #define brownishGrey [UIColor colorWithRed:112/255.0f green:112/255.0f blue:112/255.0f alpha:1]
 @interface SignInViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lb1;
@@ -22,56 +23,17 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn_facebook;
 @property (weak, nonatomic) IBOutlet UIButton *btn_google;
 @property (weak, nonatomic) IBOutlet UIButton *btn_signIn;
-@property (weak,nonatomic)NSTimer *carouselTimer;
+@property (strong, nonatomic)NSTimer *carouselTimer;
+
 
 @end
 
 @implementation SignInViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self setUpTextAttribute];
-    [self setUpBtnOutlet];
-
-
-
- 
-    
-    // Do any additional setup after loading the view, typically from a nib.
-}
--(NSTimer *)carouselTimer
-{
-    
-    
-    if (!_carouselTimer) {
-        __weak typeof (self) weakSelf = self;
-        _carouselTimer = [NSTimer timerWithTimeInterval:3 target:weakSelf selector:@selector(autoDisplayCarousel) userInfo:nil repeats:true];
-
-
-    }
-    return _carouselTimer;
-}
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    //在用户触发滚动行为时，计时器会停止计时
-    [[NSRunLoop currentRunLoop]addTimer:self.carouselTimer forMode:NSDefaultRunLoopMode];
-}
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    if (_carouselTimer ) {
-        [_carouselTimer invalidate];
-        _carouselTimer = nil;
-    }
-}
--(void)dealloc
-{
-
-    NSLog(@"__func :%s retainCount:%ld",__func__,(long)CFGetRetainCount((__bridge CFTypeRef)self));
-}
 - (IBAction)signIn:(id)sender {
-    [self presentViewController:[[SignInWithEmailViewController alloc] init] animated:true completion:nil];
+    SignInWithEmailViewController *nextvc = [[SignInWithEmailViewController alloc]init];
+    
+     [self.navigationController pushViewController:nextvc animated:true];
 }
 
 - (IBAction)thirdSignInWithFacebook:(id)sender {
@@ -80,6 +42,9 @@
 }
 
 - (IBAction)goToRegistration:(id)sender {
+    
+    RegistrationViewController *nextvc = [[RegistrationViewController alloc]init];
+    [self.navigationController pushViewController:nextvc animated:true];
 }
 
 -(void)autoDisplayCarousel
@@ -98,7 +63,7 @@
 -(void)updateScrollView:(NSInteger)number
 {
     [_imgsScrollView scrollRectToVisible:CGRectMake(number*_imgsScrollView.frame.size.width, 0, _imgsScrollView.frame.size.width, _imgsScrollView.frame.size.height) animated:true];
-//    [_imgsScrollView setContentOffset:CGPointMake(number*_imgsScrollView.frame.size.width, 0)];
+
 }
 -(void)setUpBtnOutlet
 {
@@ -143,7 +108,48 @@
     _lb4.attributedText = attributedString4;
     
 }
-#pragma mark ================UIScrollViewDelegate=====================
+
+
+
+-(NSTimer *)carouselTimer
+{
+    if (!_carouselTimer) {
+        _carouselTimer = [NSTimer timerWithTimeInterval:3 target:self selector:@selector(autoDisplayCarousel) userInfo:nil repeats:true];
+    }
+    return _carouselTimer;
+}
+
+#pragma mark ==========================Life Cycle Method============================
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setUpTextAttribute];
+    [self setUpBtnOutlet];
+  
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+ 
+    if (self.carouselTimer) {
+        [[NSRunLoop currentRunLoop]addTimer:_carouselTimer forMode:NSDefaultRunLoopMode];
+    }
+    
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    if (_carouselTimer ) {
+        [_carouselTimer invalidate];
+
+    }
+}
+-(void)dealloc
+{
+    
+    NSLog(@"__func :%s retainCount:%ld",__func__,(long)CFGetRetainCount((__bridge CFTypeRef)self));
+}
+#pragma mark ==================UIScrollViewDelegate=======================
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     int page = scrollView.contentOffset.x / scrollView.frame.size.width;

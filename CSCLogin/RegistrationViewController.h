@@ -1,5 +1,5 @@
 //
-//  SignInWithEmailViewController.h
+//  RegistrationViewController.h
 //  CSCLogin
 //
 //  Created by spring on 2019/7/4.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CSCLogin-Swift.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SignInWithEmailViewController : UIViewController
+@interface RegistrationViewController : UIViewController
 
 @end
 
